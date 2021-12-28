@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+    margin: 0;
+    background-color: #111;
+    color: #999;
+}
+
+h1 {
+    color: #999;
+    text-align: center;
+}
+
+
+header {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    border-radius: 0px 0px 40px 40px;
+    border-bottom: 2px solid gray;
+    box-shadow: 0px 0px 20px 20px black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    background-color: #222;
+    width: 350px;
+    height: 270px;
+    border-radius: 5px 5px 20px 20px;
+    border-bottom: 2px solid gray;
+    box-shadow: 0px 10px 10px 10px black;
+}
+
+.linkh {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.linkimg {
+    height: 180px;
+    width: 300px;
+    transition: 1s;
+    border-radius: 5px 5px 20px 20px;
+    border: 1px solid white;
+}
+
+.linkimg:hover {
+    height: 200px;
+    width: 330px;
+}
+
+
+
+
+
+
+
+/* Social Media Buttons */
+
+  /* Icons */
+  
+  .butt {
+    color:#fff;
+    background: #555;
+    border-radius:4px;
+    text-align:center;
+    text-decoration:none;
+    font-family:fontawesome;
+    position: relative;
+    display: inline-block;
+    width:50px;
+    height:23px;
+    padding-top:15px;
+    padding-bottom: 10px;
+    margin:0 3px;
+    transition: 0.4s;
+  }
+  
+  .butt:hover {
+    background: #999;
+  }
+  
+  /* pop-up text */
+  
+  .butt span {
+    color:#666;
+    position:absolute;
+    bottom:0;
+    left:-25px;
+    right:-25px;
+    padding:5px 7px;
+    z-index:-1;
+    font-size:14px;
+    border-radius:2px;
+    background:#fff;
+    visibility:hidden;
+  }
+  
+
+  
+  /* text pops up when icon is in hover state */
+  
+  .butt:hover span {
+    bottom:50px;
+    visibility:visible;
+    opacity:1;
+  }
+  
+  /* font awesome icons */
+  
+  .butt:nth-of-type(1):before {
+  content:'\f09a';
+  }
+  .butt:nth-of-type(2):before {
+  content:'\f099';
+  }
+  .butt:nth-of-type(3):before {
+  content:'\f0d5';
+  }
+  .butt:nth-of-type(4):before {
+  content:'\f113';
+  }
+  .butt:nth-of-type(5):before {
+  content:'\f17d';
+  }
+  .butt:nth-of-type(6):before {
+  content:'\f1cb';
+  }
+
+
+/* Footer */
+
+
+  
+  .cr {
+      border-radius: 15px 15px 0px 0px;
+      font-size: 13px;
+      color: #999;
+      height: 40px;
+      padding-top: 23px;
+      text-align: center;
+      bottom: 0;
+      margin-top: 20px;
+      margin-bottom: 0;
+      background-color: #222;
+  }
