@@ -1,23 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
     margin: 0;
     background-color: #111;
     color: #999;
+    font-size: large;
+    font-family:sans-serif;
 }
+
+
+
+#button {
+  color: #999;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #999;
+  padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 10px #333;
+}
+
+#button:hover {
+  background-color: #333;
+}
+
 
 h1 {
     color: #999;
     text-align: center;
+    transition: 1s;
+}
+
+h1:hover {
+  color: white;
 }
 
 
 header {
-    background-color: black;
     display: flex;
     width: 100%;
     border-radius: 0px 0px 40px 40px;
     border-bottom: 2px solid gray;
     box-shadow: 0px 0px 20px 20px black;
+    background-image: url("123.jpg");
+    transition: 1s;
 }
 
 .center {
@@ -26,8 +51,50 @@ header {
     text-align: center;
 }
 
+
+#aboutme {
+  border-radius: 30px 10px 30px 10px;
+  border: 3px solid #555;
+  width: 80%;
+  transition: 1s;
+  box-shadow: 0px 0px 20px 20px black;
+  background-image: url("12.jpg");
+  padding: 20px;
+  padding-top: 0px;
+}
+
+p {
+  transition: 1s;
+}
+
+#ama {
+  float: right;
+  padding: 10px;
+  margin-top: 7px;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 0px 0px 3px 3px #888;
+}
+
+
+
+#aboutme2 {
+  border-radius: 30px 10px 30px 10px;
+  border: 3px solid #555;
+  width: 80%;
+  transition: 1s;
+  box-shadow: 0px 0px 20px 20px black;
+  background-image: url("12.jpg");
+  padding: 20px;
+  padding-top: 0px;
+}
+
+
 .box {
-    background-color: #222;
+    background-color: #333;
     width: 350px;
     height: 270px;
     border-radius: 5px 5px 20px 20px;
@@ -48,6 +115,14 @@ header {
     border: 1px solid white;
 }
 
+.linkimg2 {
+    height: 180px;
+    width: 310px;
+    transition: 1s;
+    border-radius: 5px 5px 20px 20px;
+    border: 1px solid blue;
+}
+
 .linkimg:hover {
     height: 180px;
     width: 310px;
@@ -55,81 +130,6 @@ header {
 
 
 
-
-
-
-
-/* Social Media Buttons */
-
-  /* Icons */
-  
-  .butt {
-    color:#fff;
-    background: #555;
-    border-radius:4px;
-    text-align:center;
-    text-decoration:none;
-    font-family:fontawesome;
-    position: relative;
-    display: inline-block;
-    width:50px;
-    height:23px;
-    padding-top:15px;
-    padding-bottom: 10px;
-    margin:0 3px;
-    transition: 0.4s;
-  }
-  
-  .butt:hover {
-    background: #999;
-  }
-  
-  /* pop-up text */
-  
-  .butt span {
-    color:#666;
-    position:absolute;
-    bottom:0;
-    left:-25px;
-    right:-25px;
-    padding:5px 7px;
-    z-index:-1;
-    font-size:14px;
-    border-radius:2px;
-    background:#fff;
-    visibility:hidden;
-  }
-  
-
-  
-  /* text pops up when icon is in hover state */
-  
-  .butt:hover span {
-    bottom:50px;
-    visibility:visible;
-    opacity:1;
-  }
-  
-  /* font awesome icons */
-  
-  .butt:nth-of-type(1):before {
-  content:'\f09a';
-  }
-  .butt:nth-of-type(2):before {
-  content:'\f099';
-  }
-  .butt:nth-of-type(3):before {
-  content:'\f0d5';
-  }
-  .butt:nth-of-type(4):before {
-  content:'\f113';
-  }
-  .butt:nth-of-type(5):before {
-  content:'\f17d';
-  }
-  .butt:nth-of-type(6):before {
-  content:'\f1cb';
-  }
 
 
 /* Footer */
@@ -148,3 +148,17 @@ header {
       margin-bottom: 0;
       background-color: #222;
   }
+
+
+/* Phone View */
+
+@media only screen and (max-width: 600px) {
+   header {
+     height: 50px;
+   }
+
+   .naslov  {
+     margin: 0;
+     margin-top: 5px;
+   }
+}
