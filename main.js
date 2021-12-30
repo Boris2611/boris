@@ -37,28 +37,32 @@ var x = 2
 function change() {
     
     if(x % 2 == 0) {
-    document.getElementById("img1").style.width = "330px";
+    document.getElementById("img1").style.width = "80%";
     document.getElementById("img1").style.height = "200px";
+    document.getElementById("img1").style.boxShadow = "0px 0px 10px 10px #444";
 
-    document.getElementById("img2").style.width = "330px";
+    document.getElementById("img2").style.width = "80%";
     document.getElementById("img2").style.height = "200px";
+    document.getElementById("img2").style.boxShadow = "0px 0px 10px 10px #444";
 
-    document.getElementById("img3").style.width = "330px";
+    document.getElementById("img3").style.width = "80%";
     document.getElementById("img3").style.height = "200px";
+    document.getElementById("img3").style.boxShadow = "0px 0px 10px 10px #444";
 
-    document.getElementById("img4").style.width = "330px";
+    document.getElementById("img4").style.width = "80%";
     document.getElementById("img4").style.height = "200px";
+    document.getElementById("img4").style.boxShadow = "0px 0px 10px 10px #444";
 
     document.querySelector("h1").style.color = "white";
-    document.querySelector("header").style.borderBottom = "2px solid white";
-    document.querySelector("header").style.boxShadow = "0px 0px 10px 10px #333";
+    document.querySelector("header").style.borderBottom = "2px solid #999";
+    document.querySelector("header").style.boxShadow = "0px 0px 15px 15px #333";
 
-    document.getElementById("aboutme").style.border = "3px solid white";
+    document.getElementById("aboutme").style.border = "3px solid #999";
     document.getElementById("aboutme").style.boxShadow = "0px 0px 10px 10px #333";
     document.getElementById("amh").style.color = "white";
     document.getElementById("amp").style.color = "#999";
 
-    document.getElementById("aboutme2").style.border = "3px solid white";
+    document.getElementById("aboutme2").style.border = "3px solid #999";
     document.getElementById("aboutme2").style.boxShadow = "0px 0px 10px 10px #333";
     document.getElementById("amh2").style.color = "white";
     document.getElementById("amp2").style.color = "#999";
@@ -73,17 +77,22 @@ function change2() {
 
     if(x % 2 == 0) {
 
-    document.getElementById("img1").style.width = "300px";
+    document.getElementById("img1").style.width = "70%";
     document.getElementById("img1").style.height = "180px";
+    document.getElementById("img1").style.boxShadow = "0px 0px 10px 10px #222";
+    
 
-    document.getElementById("img2").style.width = "300px";
+    document.getElementById("img2").style.width = "70%";
     document.getElementById("img2").style.height = "180px";
+    document.getElementById("img2").style.boxShadow = "0px 0px 10px 10px #222";
 
-    document.getElementById("img3").style.width = "300px";
+    document.getElementById("img3").style.width = "70%";
     document.getElementById("img3").style.height = "180px";
+    document.getElementById("img3").style.boxShadow = "0px 0px 10px 10px #222";
 
-    document.getElementById("img4").style.width = "300px";
+    document.getElementById("img4").style.width = "70%";
     document.getElementById("img4").style.height = "180px";
+    document.getElementById("img4").style.boxShadow = "0px 0px 10px 10px #222";
 
 
     }
