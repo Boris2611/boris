@@ -106,11 +106,21 @@ hr {
     border-radius: 5px 5px 20px 20px;
     border-bottom: 3px solid gray;
     box-shadow: 0px 10px 10px 10px black;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+.links {
+  display:flex;
+  width: 90%;
+  justify-content: center;
+}
 .linkh {
     margin-top: 5px;
     margin-bottom: 15px;
+    text-shadow: 0px 10px 10px #555;
 }
 
 .linkimg {
@@ -159,7 +169,7 @@ hr {
 
 /* Phone View */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
    header {
      height: 50px;
    }
@@ -173,6 +183,14 @@ hr {
    .box {
      width: 90%;
      height: 300px;
+     margin-right: 0;
+     margin-left: 0;
+     
+     
    }
 
+
+   .links {
+     display: block;
+   }
 }
