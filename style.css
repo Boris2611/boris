@@ -181,6 +181,9 @@ hr {
      
    }
 
+   .linkimg {
+     width: 260px;
+   }
 
    .links {
      display: block;
