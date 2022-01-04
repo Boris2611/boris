@@ -1,8 +1,9 @@
 
 
+
+// Glow effect 2 seconds after loading site
+
 setTimeout(change2, 2000);
-
-
 
 function change2() {
     document.querySelector("body").style.color = "#999";
@@ -11,7 +12,6 @@ function change2() {
 
     document.getElementById("aboutme2").style.border = "2px solid white";
     document.getElementById("aboutme2").style.boxShadow = "0px 0px 10px 10px #333";
-  
 }
 
 
