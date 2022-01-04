@@ -134,7 +134,7 @@ hr {
 
 .linkimg:hover {
     height: 180px;
-    width: 310px;
+ 
 }
 
 
@@ -175,8 +175,8 @@ hr {
    }
 
    .box {
-     width: 90%;
-     height: 280px;
+     width: 95%;
+     height: 270px;
      margin-right: 0;
      margin-left: 0;
      
