@@ -38,7 +38,7 @@ function serbian() {
   document.getElementById("options").classList.add("loader_fade");
   document.getElementById("language_select").classList.add("loader_fade")
 
-  setTimeout(remove_all,3000)
+  setTimeout(remove_all,2000)
   
 
   
@@ -176,14 +176,12 @@ function removeee() {
   document.getElementById("loader").style.display = "none";
 }
 
+
+
 function remove_all() {
   console.log("removing")
   document.getElementById("bg_video_language_select").style.display = "none";
   document.getElementById("language_select").style.display = "none";
-
 }
-
-
-
 
 

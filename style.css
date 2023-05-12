@@ -49,6 +49,7 @@
 
 body {
     margin: 0;
+    height: 100%;
     font-family: 'Quicksand', sans-serif;
     background-size: cover;
     color: white;
@@ -592,6 +593,7 @@ footer {
   position: fixed;
   z-index: 20;
   visibility: hidden;
+  overflow: hidden;
 }
 
 .language_select_text {
