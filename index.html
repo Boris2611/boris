@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Boris Janković</title>
+</head>
+<body>
+
+  <div class="particles"></div>
+  <div class="particles"></div>
+  <div class="particles"></div>
+
+  
+    
+<!-- Particles: https://codepen.io/baarbaracrr/pen/NWYwWRB -->
+<!-- Hamburger_menu_by: https://codepen.io/CodingPencil/pen/abEWzXp -->
+
+ 
+<!-- NavBar/ Haburger Menu -->
+  <nav>
+    <div>
+      <div class="waviy">
+        <span style="--i:1">B</span>
+        <span style="--i:2">o</span>
+        <span style="--i:3">r</span>
+        <span style="--i:4">i</span>
+        <span style="--i:5">s</span>
+        <span style="--i:6"> </span>
+        <span style="--i:7">J</span>
+        <span style="--i:8">a</span>
+        <span style="--i:9">n</span>
+        <span style="--i:10">k</span>
+        <span style="--i:11">o</span>
+        <span style="--i:12">v</span>
+        <span style="--i:13">i</span>
+        <span style="--i:14">ć</span>
+       </div>
+    </div>
+    <div>
+      <ul id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </div>
+    <div class="menu" id="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="empty"></div>
+
+  <!-- PopUp Low Battery-->
+  <div class="center">
+    <div id="low_battery_box" class="box">
+        <h1 class="popup_h1">Low Battery</h1>
+        <p class="popup_p">20% battery remaining.</p>
+        <button class="button1">Low Power Mode</button><br>
+        <button onclick="low_battery_close()" class="button2">Close</button>
+    </div>
+  </div>
+
+    <!-- Animated Text -->
+    <div id="container">
+      <span id="text1"></span>
+      <span id="text2"></span>
+  </div>
+  <svg id="filters">
+      <defs>
+          <filter id="threshold">
+              <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 255 -140" />
+          </filter>
+      </defs>
+  </svg>
+
+  <div class="empty"></div>
+
+
+
+  <div class="center_div">
+    <div class="text_div">
+        <h1 class="text_1">Who am I:</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, non deleniti hic molestiae omnis sunt voluptate maxime pariatur ullam possimus dicta voluptatibus dolorum aut eos amet. Fugit dolore itaque quaerat.</p>
+    </div>
+
+    <div class="text_div">
+        <h1 class="text_1">About Me:</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, non deleniti hic molestiae omnis sunt voluptate maxime pariatur ullam possimus dicta voluptatibus dolorum aut eos amet. Fugit dolore itaque quaerat.</p>
+    </div>
+  </div>
+
+    <!-- Image -->
+    <div class="center">
+    <img class="logo_img" src="img/IMG_20230508_143823_571.jpg">
+    </div>
+
+
+    <button onclick="low_battery()">Test</button>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
