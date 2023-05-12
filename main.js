@@ -95,6 +95,16 @@ function animate() {
 animate();
 
 function loadf(){
-  document.getElementById("loader").style.display = "none"
+  setTimeout(newf, 2000);
 }
 
+function newf(){
+  document.getElementById("loader").classList.add("loader_fade");
+  setTimeout(removeee, 2000);
+  
+}
+
+
+function removeee() {
+  document.getElementById("loader").style.display = "none";
+}

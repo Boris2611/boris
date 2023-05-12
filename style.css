@@ -11,7 +11,6 @@
   z-index: -1;
   overflow: hidden;
 }
-
 .background-video video {
   width: 100%;
   height: 100%;
@@ -33,44 +32,6 @@ body {
 .empty {
   width: 100%;
   height: 220px;
-}
-
-.logo_img {
-  width: 40%;
-  margin-top: 150px;
-  border: 1px solid white;
-  border-radius: 20px 40px;
-  box-shadow: 0px 0px 10px 0px rgb(83, 172, 255);
-}
-
-.logo_img:hover {
-  rotate: 360deg;
-  transition: 0.5s;
-}
-
-.center, .center_div {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.center_div {
-  padding: 50px;
-  margin: 50px;
-}
-
-.text_div {
-  margin: 20px;
-  border: 1px solid white;
-  border-radius: 10px 40px;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 0px rgb(83, 172, 255);
-  background-color: rgba(102, 135, 247, 0.089);
-  transition: 1s;
-}
-.text_div:hover {
-  background-color: #5bc7ee48;
-  box-shadow: 0px 0px 50px 0px rgb(83, 172, 255);
 }
 
 
@@ -285,41 +246,23 @@ nav .menu.active span:nth-child(2) {
   position: relative;
   display: inline-block;
   font-size: 25px;
-  color: #fff;
+  color: rgb(90, 173, 255);
 
   animation: flip 7s infinite;
   animation-delay: calc(.5s * var(--i));
 
 }
 @keyframes flip {
-  0%,80% {
-    transform: rotateY(360deg) 
+  0%,90% {
+    transform: rotateY(360deg); 
+    color: #fff;
   }
 }
 
 
-@media (max-width: 910px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  #text1,
-#text2 {
-  font-size: 50px;
-}
-
-.center_div {
-  display: block;
-  padding: 5px;
-  margin: 5px;
-}
-}
 
 
-
-
-
-
+/*Loader*/
 .loader_div {
   z-index: 20;
   position: fixed;
@@ -332,19 +275,29 @@ nav .menu.active span:nth-child(2) {
   height: 100%;
   margin: 0;
   padding-top: 400px;
+}
+#loader {
   transition: 1s;
 }
-
-
-
+.loader_fade {
+  animation: fadeOut 3s forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 .loader {
 
   transform: rotateZ(45deg);
   perspective: 1000px;
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 70px;
   color: #fff;
 }
   .loader:before,
@@ -361,7 +314,7 @@ nav .menu.active span:nth-child(2) {
     animation: 1s spin linear infinite;
   }
   .loader:after {
-    color: #FF3D00;
+    color: #4456f8;
     transform: rotateY(70deg);
     animation-delay: .4s;
   }
@@ -374,7 +327,6 @@ nav .menu.active span:nth-child(2) {
     transform: translate(-50%, -50%) rotateZ(360deg);
   }
 }
-
 @keyframes rotateccw {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -383,7 +335,6 @@ nav .menu.active span:nth-child(2) {
     transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
-
 @keyframes spin {
   0%,
   100% {
@@ -410,4 +361,64 @@ nav .menu.active span:nth-child(2) {
   87% {
     box-shadow: .2em -.2em 0 0 currentcolor;
   }
+}
+
+
+
+
+
+.logo_img {
+  width: 40%;
+  margin-top: 150px;
+  border: 1px solid white;
+  border-radius: 20px 40px;
+  box-shadow: 0px 0px 10px 0px rgb(83, 172, 255);
+}
+
+.logo_img:hover {
+  rotate: 360deg;
+  transition: 0.5s;
+}
+
+.center, .center_div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.center_div {
+  padding: 50px;
+  margin: 50px;
+}
+
+.text_div {
+  margin: 20px;
+  border: 1px solid white;
+  border-radius: 10px 40px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgb(83, 172, 255);
+  background-color: rgba(102, 135, 247, 0.089);
+  transition: 1s;
+}
+.text_div:hover {
+  background-color: #5bc7ee48;
+  box-shadow: 0px 0px 50px 0px rgb(83, 172, 255);
+}
+
+
+@media (max-width: 910px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #text1,
+#text2 {
+  font-size: 50px;
+}
+
+.center_div {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
 }
