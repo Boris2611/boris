@@ -51,6 +51,7 @@ body {
     margin: 0;
     height: 100%;
     font-family: 'Quicksand', sans-serif;
+    background-image: url(img/pexels-cottonbro-studio-9667824.jpg);
     background-size: cover;
     color: white;
     overflow-x: hidden;
