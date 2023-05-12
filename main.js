@@ -95,7 +95,7 @@ function animate() {
 animate();
 
 function loadf(){
-  setTimeout(newf, 2000);
+  setTimeout(newf, 1000);
 }
 
 function newf(){
