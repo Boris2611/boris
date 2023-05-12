@@ -17,7 +17,7 @@
   </div>
 
   <div id="loader" class="loader_div center">
-    <span class="loader"></span>
+    <span id="loader_icon" class="loader"></span>
   </div>
 
     
@@ -62,9 +62,6 @@
   </nav>
 
   <div class="empty"></div>
-  
-
-
 
     <!-- Animated Text -->
     <div id="container">
@@ -84,14 +81,6 @@
 
   <div class="empty"></div>
 
-
-
-
-
-
-
-
-
   <div class="center_div">
     <div class="text_div">
         <h1 class="text_1">Who am I:</h1>
@@ -104,30 +93,48 @@
     </div>
   </div>
 
+<div class="center">
+  <div id="language_select" class="language_select">
+    
+    <div id="options">
+    <h1 class="language_select_text">Izaberite Jezik:<br>Select Language:</h1>
+    
+    <image class="language_icon" src="img/icons8-serbia-96 (1).png" onclick="serbian()">SRB</img>
+    <image class="language_icon" src="img/icons8-usa-96.png" onclick="english()">EN</button>
+    </div>
+      <video id="bg_video_language_select" autoplay loop muted>
+        <source src="Untitled.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+</div>
 
 
+
+
+  <!--Contact Me-->
   <div class="center">
-    <h1 class="footer_text">Contact Me:</h1>
+    <h1 id="contact_me_h1" class="footer_text"></h1>
   </div>
     <!-- Image -->
       <div class="center">
           <img class="logo_img" src="img/IMG_20230508_143823_571.jpg">
       </div>
   
-        <script src="https://kit.fontawesome.com/12642bc27d.js" crossorigin="anonymous"></script>
-   
+      
+      <!-- Social Media Buttons-->
         <div class="navigation" id="contact">
           <div class="menuToggle"></div>
           <div class="menu_social">
               <ul>
                   <li style="--i:0.1s"><a href="https://www.instagram.com/boris.rs/" target="_blank">
-                          <img class="icon" src="icons8-instagram-500.png">
+                          <img class="icon" src="img/icons8-instagram-500.png">
                       </a></li>
                   <li style="--i:0.2s"><a href="mailto:jankoovicbooris@gmail.com" target="_blank">
-                    <img class="icon" src="icons8-gmail-512.png">
+                    <img class="icon" src="img/icons8-gmail-512.png">
                       </a></li>
                   <li style="--i:0.3s"><a href="tel:+381601675757" target="_blank">
-                      <img class="icon" src="icons8-phone-100.png">
+                      <img class="icon" src="img/icons8-phone-100.png">
                       </a></li>
                
               </ul>
@@ -137,11 +144,6 @@
 
     <footer>
     
-    
-
-      
-    
-      
 
       <p class="bottom">Boris Janković © 2023-2023 All rights reserved ©</p>
     </footer>

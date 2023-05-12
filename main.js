@@ -1,42 +1,74 @@
-// NavBar - Hamburger Menu
-const navigation = document.getElementById("nav");
-const menu = document.getElementById("menu");
-menu.addEventListener("click", () => {
-  // The navigation.children.length means the following :-
-  // The children inside a parent are basically an array of elements; So, here I'm finding the length of the array aka how many children are inside the nav bar.
-  //   Yup That's all.
-  navigation.style.setProperty("--childenNumber", navigation.children.length);
+// Language Options
 
-  //    Casually Toggling Classes to make them animate on click
-  //   Regular stuff ;)
-  navigation.classList.toggle("active");
-  menu.classList.toggle("active");
-});
+let english_language = "SELECTED";
+let serbian_language = "NONE"
+
+let who_am_i = '';
+let contact_me_h1 = '';
 
 
-// LowBattery
-function low_battery() {
-    document.getElementById("low_battery_box").style.visibility = "visible";
-}
-// Close Button on LowBattery Screen
-function low_battery_close() {
-    document.getElementById("low_battery_box").style.visibility = "hidden";
+function english() {
+  english_language = "SELECTED";
+  serbian_language = "NONE";
+  console.log("English language selected.")
+  texts = []
+  document.getElementById("options").classList.add("loader_fade");
+  document.getElementById("language_select").classList.add("loader_fade")
+
+  contact_me_h1 = "Contact Me:";
+
+  updateTexts();
 }
 
+function serbian() {
+  serbian_language = "SELECTED";
+  english_language = "NONE";
+  console.log("Serbian language selected.")
+  texts = []
+  document.getElementById("options").classList.add("loader_fade");
+  document.getElementById("language_select").classList.add("loader_fade")
+  
 
+  
+
+  contact_me_h1 = "Kontaktiraj me:";
+
+  updateTexts();
+}
+
+
+
+
+//---------------------------------------------------- ANIMATED TEXT 
+
+function updateTexts(){
+
+
+  document.getElementById("contact_me_h1").innerHTML = contact_me_h1;
+  console.log("InnerHTML- Contact me")
 
 // Showing Text
 const elts = {
   text1: document.getElementById("text1"),
   text2: document.getElementById("text2")
 };
-// Showing text
-const texts = [
-  "CREATE",
-  "YOUR",
-  "DESTINY "
-  
-];
+
+
+if (serbian_language === "SELECTED") {
+  texts = [
+    "STVORI",
+    "SVOJU",
+    "BUDUCNOST "
+  ];
+} else {
+  texts = [
+    "CREATE",
+    "YOUR",
+    "DESTINY "
+  ];
+}
+
+
 const morphTime = 1;
 const cooldownTime = 0.25;
 let textIndex = texts.length - 1;
@@ -94,10 +126,36 @@ function animate() {
 }
 animate();
 
+}
+
+
+// ------------------------------------------------------
+
+// NavBar - Hamburger Menu
+const navigation = document.getElementById("nav");
+const menu = document.getElementById("menu");
+menu.addEventListener("click", () => {
+  // The navigation.children.length means the following :-
+  // The children inside a parent are basically an array of elements; So, here I'm finding the length of the array aka how many children are inside the nav bar.
+  //   Yup That's all.
+  navigation.style.setProperty("--childenNumber", navigation.children.length);
+
+  //    Casually Toggling Classes to make them animate on click
+  //   Regular stuff ;)
+  navigation.classList.toggle("active");
+  menu.classList.toggle("active");
+});
+
+
+
+
+
 function loadf(){
   setTimeout(newf, 1000);
+  console.log("loaded")
 }
 function newf(){
+  document.getElementById("language_select").style.visibility = "visible";
   document.getElementById("loader").classList.add("loader_fade");
   setTimeout(removeee, 2000);
   
