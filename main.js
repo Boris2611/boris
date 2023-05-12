@@ -1,3 +1,11 @@
+
+let menuToggle = document.querySelector('.menuToggle');
+menuToggle.onclick = function () {
+    menuToggle.classList.toggle('active');
+}
+
+
+
 // Language Options
 
 let english_language = "SELECTED";
@@ -15,6 +23,8 @@ function english() {
   document.getElementById("options").classList.add("loader_fade");
   document.getElementById("language_select").classList.add("loader_fade")
 
+  setTimeout(remove_all,3000)
+
   contact_me_h1 = "Contact Me:";
 
   updateTexts();
@@ -27,6 +37,8 @@ function serbian() {
   texts = []
   document.getElementById("options").classList.add("loader_fade");
   document.getElementById("language_select").classList.add("loader_fade")
+
+  setTimeout(remove_all,3000)
   
 
   
@@ -164,9 +176,14 @@ function removeee() {
   document.getElementById("loader").style.display = "none";
 }
 
+function remove_all() {
+  console.log("removing")
+  document.getElementById("bg_video_language_select").style.display = "none";
+  document.getElementById("language_select").style.display = "none";
 
-
-let menuToggle = document.querySelector('.menuToggle');
-menuToggle.onclick = function () {
-    menuToggle.classList.toggle('active');
 }
+
+
+
+
+
