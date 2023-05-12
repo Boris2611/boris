@@ -97,14 +97,18 @@ animate();
 function loadf(){
   setTimeout(newf, 1000);
 }
-
 function newf(){
   document.getElementById("loader").classList.add("loader_fade");
   setTimeout(removeee, 2000);
   
 }
-
-
 function removeee() {
   document.getElementById("loader").style.display = "none";
+}
+
+
+
+let menuToggle = document.querySelector('.menuToggle');
+menuToggle.onclick = function () {
+    menuToggle.classList.toggle('active');
 }

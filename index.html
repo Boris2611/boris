@@ -23,6 +23,7 @@
     
 <!-- Particles: https://codepen.io/baarbaracrr/pen/NWYwWRB -->
 <!-- Hamburger_menu_by: https://codepen.io/CodingPencil/pen/abEWzXp -->
+<!-- Contact me menu: https://codepen.io/saaim-k/pen/yLKxKgL-->
 
  
 <!-- NavBar/ Haburger Menu -->
@@ -49,7 +50,7 @@
       <ul id="nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="#">Services</a></li>
       </ul>
     </div>
@@ -63,15 +64,7 @@
   <div class="empty"></div>
   
 
-  <!-- PopUp Low Battery-->
-  <div class="center">
-    <div id="low_battery_box" class="box">
-        <h1 class="popup_h1">Low Battery</h1>
-        <p class="popup_p">20% battery remaining.</p>
-        <button class="button1">Low Power Mode</button><br>
-        <button onclick="low_battery_close()" class="button2">Close</button>
-    </div>
-  </div>
+
 
     <!-- Animated Text -->
     <div id="container">
@@ -111,14 +104,45 @@
     </div>
   </div>
 
+
+
+  <div class="center">
+    <h1 class="footer_text">Contact Me:</h1>
+  </div>
     <!-- Image -->
       <div class="center">
           <img class="logo_img" src="img/IMG_20230508_143823_571.jpg">
       </div>
+  
+        <script src="https://kit.fontawesome.com/12642bc27d.js" crossorigin="anonymous"></script>
+   
+        <div class="navigation" id="contact">
+          <div class="menuToggle"></div>
+          <div class="menu_social">
+              <ul>
+                  <li style="--i:0.1s"><a href="https://www.instagram.com/boris.rs/" target="_blank">
+                          <img class="icon" src="icons8-instagram-500.png">
+                      </a></li>
+                  <li style="--i:0.2s"><a href="mailto:jankoovicbooris@gmail.com" target="_blank">
+                    <img class="icon" src="icons8-gmail-512.png">
+                      </a></li>
+                  <li style="--i:0.3s"><a href="+381601675757" target="_blank">
+                      <img class="icon" src="icons8-phone-100.png">
+                      </a></li>
+               
+              </ul>
+          </div>
+      </div>
 
 
-    <button onclick="low_battery()">Test</button>
+    <footer>
     
+    
+    
+      
+
+      <p class="bottom">Boris Janković © 2023-2023 All rights reserved ©</p>
+    </footer>
 
   
     <body onload="loadf()">
