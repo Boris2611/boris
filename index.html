@@ -9,11 +9,17 @@
 </head>
 <body>
 
-  <div class="particles"></div>
-  <div class="particles"></div>
-  <div class="particles"></div>
+  <div class="background-video">
+    <video autoplay loop muted>
+      <source src="Untitled.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-  
+
+  <div id="loader" class="loader_div center">
+    <span class="loader"></span>
+  </div>
     
 <!-- Particles: https://codepen.io/baarbaracrr/pen/NWYwWRB -->
 <!-- Hamburger_menu_by: https://codepen.io/CodingPencil/pen/abEWzXp -->
@@ -99,15 +105,16 @@
   </div>
 
     <!-- Image -->
-    <div class="center">
-    <img class="logo_img" src="img/IMG_20230508_143823_571.jpg">
-    </div>
+      <div class="center">
+          <img class="logo_img" src="img/IMG_20230508_143823_571.jpg">
+      </div>
 
 
     <button onclick="low_battery()">Test</button>
     
 
-
+  
+    <body onload="setTimeout(loadf(), 3000)">
     <script src="main.js"></script>
 </body>
 </html>

@@ -94,4 +94,7 @@ function animate() {
 }
 animate();
 
+function loadf(){
+  document.getElementById("loader").style.display = "none"
+}
 
